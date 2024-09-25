@@ -1,0 +1,1 @@
+-   Add additional configuration files: [Top-level files @ NextJS](https://nextjs.org/docs/getting-started/project-structure#top-level-files)
