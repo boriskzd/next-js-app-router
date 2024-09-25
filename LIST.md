@@ -1,1 +1,2 @@
 -   Add additional configuration files: [Top-level files @ NextJS](https://nextjs.org/docs/getting-started/project-structure#top-level-files)
+-   Fix: "warning: in the working copy of 'filename.ts', LF will be replaced by CRLF the next time Git touches it"
