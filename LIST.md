@@ -1,3 +1,4 @@
 -   Add additional configuration files: [Top-level files @ NextJS](https://nextjs.org/docs/getting-started/project-structure#top-level-files)
 -   Fix: "warning: in the working copy of 'filename.ts', LF will be replaced by CRLF the next time Git touches it"
 -   Check Out: [Next.js App Router Playground](https://app-router.vercel.app/)
+-   Contribute to Next.js documentation by adding link to App Router page in sidebar [Contributing to Next.js](https://github.com/vercel/next.js/blob/canary/contributing.md), [Docs Contribution Guide](https://nextjs.org/docs/community/contribution-guide)
