@@ -23,7 +23,9 @@ export default function Home() {
 
 				<ol className='list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
 					{myList.map((item) => (
-						<li className='mb-2'>{item}</li>
+						<li className='mb-2' key={item}>
+							{item}
+						</li>
 					))}
 					<li className='mb-2'>
 						Get started by editing{' '}
