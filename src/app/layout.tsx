@@ -27,15 +27,20 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				{/* Global Navbar */}
 				<nav style={{ background: 'pink', color: '#522', padding: 20 }}>
 					<Link href='/' style={{ padding: 20, border: '1px solid #522' }}>
 						Home
+					</Link>
+					<Link href='/notes' style={{ padding: 20, border: '1px solid #522' }}>
+						Notes
 					</Link>
 					<Link href='/about' style={{ padding: 20, border: '1px solid #522' }}>
 						About
 					</Link>
 				</nav>
 				{children}
+				{/* Global Footer */}
 				<footer style={{ background: 'pink', color: '#522', padding: 20 }}>Footer</footer>
 			</body>
 		</html>

@@ -7,16 +7,20 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Check Out: [Next.js App Router Playground](https://app-router.vercel.app/)
 -   \_\_ Contribute to Next.js documentation by adding link to App Router page in sidebar [Contributing to Next.js](https://github.com/vercel/next.js/blob/canary/contributing.md), [Docs Contribution Guide](https://nextjs.org/docs/community/contribution-guide)
 -   \_\_ `src` vs `app` folder
--   \_\_ `[slug]/` folder ==> `example.com/{slug}`
--   \_\_ `(group)/` folder ==> `example.com/???`
+-   \_\_ `[slug]/` folder ---> `example.com/{slug}`
+-   \_\_ `(group)/` folder ---> `example.com/???`
 -   <u>✔</u> Add `page.tsx`
 -   \_\_ Add `layout.tsx`
 -   \_\_ Add `loading.tsx`
 -   \_\_ Add `error.tsx`
 -   \_\_ Add `template.tsx`
 -   \_\_ Add `head.tsx`
--   \_\_
--   \_\_
+-   \_\_ Add `layout.tsx` in subdirectory that already has `layout.tsx`
+-   \_\_ Add `global.css` @ 3:39
+-   <u>✔</u> Add **PocketBase** as backend
+-   \_\_ Add Authentication for PocketBase, possibly for automatic login: [PocketBase ---> Authentication](https://pocketbase.io/docs/authentication/)
+-   <u>✔</u> Add TypeScript for items instead of any[]
+-   \_\_ TypeScript: `type` vs `interface`
 -   \_\_
 -   \_\_
 -   \_\_

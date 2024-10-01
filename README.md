@@ -18,6 +18,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+### Backend - PocketBase
+
+To run backend, which is PocketBase:
+
+1.. Download PocketBase here: https://pocketbase.io/docs/
+
+2.. Run this in the root of the project:
+
+```
+./pocketbase serve
+```
+
+Server: http://127.0.0.1:8090
+
+REST API: http://127.0.0.1:8090/api/
+
+Admin UI: http://127.0.0.1:8090/_/
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
