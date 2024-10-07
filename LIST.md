@@ -21,6 +21,9 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add Authentication for PocketBase, possibly for automatic login: [PocketBase ---> Authentication](https://pocketbase.io/docs/authentication/)
 -   <u>✔</u> Add TypeScript for items instead of any[]
 -   \_\_ TypeScript: `type` vs `interface`
+-   \_\_ Make a flexbox `layout`
+-   \_\_
+-   \_\_
 -   \_\_
 -   \_\_
 -   \_\_
