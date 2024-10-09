@@ -56,6 +56,9 @@ async function getNote(noteId: string) {
 export default async function NotePage({ params }: any) {
 	const note = await getNote(params.id);
 
+	// add error testing for one note
+	if (note.id === 'sew4zwh9y0r2tdk') throw Error();
+
 	return (
 		<div>
 			<h1>Notes/{note.id}</h1>
