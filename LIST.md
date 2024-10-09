@@ -22,7 +22,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   <u>✔</u> Add TypeScript for items instead of any[]
 -   \_\_ TypeScript: `type` vs `interface`
 -   \_\_ Make a flexbox `layout`
--   \_\_
+-   \_\_ Add error handling when PocketBase isn't run, that says "Please run pocketbase by typing this and that"
 -   \_\_
 -   \_\_
 -   \_\_
