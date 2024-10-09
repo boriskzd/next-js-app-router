@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export type NoteType = {
 	id: number;
 	created: string;
@@ -12,8 +10,8 @@ interface NoteProps {
 }
 
 export default function Note({ note }: NoteProps) {
-	console.log(note);
-	console.log(note.title);
+	// object destructuring with a fallback
+	// If note is null or undefined, it will fallback to an empty object, preventing errors and assigning undefined to the destructured variables.
 	const { title, field, created, id } = note || {};
 
 	return (

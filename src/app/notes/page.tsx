@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import Note from './note';
 import { NoteType } from './note';
 
+// data fetching is done directly inside components, since they are by default Server components
 async function getNotes() {
-	// const res = await fetch('http://127.0.0.1:8090/api/collections/Notes/records');
+	// fetch API
 	const res = await fetch('http://127.0.0.1:8090/api/collections/Notes/records?page=1&perPage=30', {
 		cache: 'no-store',
 	});
@@ -12,15 +14,19 @@ async function getNotes() {
 }
 
 export default async function NotesPage() {
-	console.log(' - - - - - ');
-	console.log('Notes Page');
 	const notes = await getNotes();
 
 	return (
 		<div>
 			<h1>Notes</h1>
 			{notes?.map((note) => {
-				return <Note note={note} key={note.id} />;
+				return (
+					// generate clickable notes
+					// clicking on notes visits individual note page
+					<Link href={`/notes/${note.id}`} key={note.id}>
+						<Note note={note} />
+					</Link>
+				);
 			})}
 		</div>
 	);
