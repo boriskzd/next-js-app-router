@@ -3,6 +3,9 @@ export type NoteType = {
 	created: string;
 	title: string;
 	field: string;
+	updated?: string;
+	collectionId?: string;
+	collectionName?: string;
 };
 
 interface NoteProps {
