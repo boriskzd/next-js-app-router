@@ -57,6 +57,7 @@ export default async function NotePage({ params }: any) {
 	const note = await getNote(params.id);
 
 	// add error testing for one note
+	// TODO: add Error handling
 	if (note.id === 'sew4zwh9y0r2tdk') throw Error();
 
 	return (

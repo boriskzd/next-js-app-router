@@ -11,7 +11,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ `(group)/` folder ---> `example.com/???`
 -   <u>✔</u> Add `page.tsx`
 -   \_\_ Add `layout.tsx`
--   \_\_ Add `loading.tsx`
+-   <u>✔</u> Add `loading.tsx`
 -   \_\_ Add `error.tsx`
 -   \_\_ Add `template.tsx`
 -   \_\_ Add `head.tsx`
@@ -23,7 +23,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ TypeScript: `type` vs `interface`
 -   \_\_ Make a flexbox `layout`
 -   \_\_ Add error handling when PocketBase isn't run, that says "Please run pocketbase by typing this and that"
--   \_\_
+-   \_\_ Add error handling in note component https://nextjs.org/docs/app/api-reference/file-conventions/error
 -   \_\_
 -   \_\_
 -   \_\_
