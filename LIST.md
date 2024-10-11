@@ -27,6 +27,9 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ use `generateStaticParams` to pre-generate notes.
 -   \_\_ Separate Note.id from Note in TypeScript
 -   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
+-   \_\_ Review tasks
+-   \_\_ Review video + tasks and update tasks
+-   \_\_
 -   \_\_
 -   \_\_
 -   \_\_
