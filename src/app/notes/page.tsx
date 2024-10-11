@@ -2,6 +2,7 @@ import PocketBase from 'pocketbase';
 import Link from 'next/link';
 import Note from './note';
 import { NoteType } from './note';
+import CreateNote from './[id]/CreateNote';
 
 // data fetching is done directly inside components, since they are by default Server components
 async function getNotes() {
@@ -37,6 +38,7 @@ export default async function NotesPage() {
 					</Link>
 				);
 			})}
+			<CreateNote />
 		</div>
 	);
 }

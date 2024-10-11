@@ -40,12 +40,15 @@ export const preferredRegion = 'auto';
 // ----- CACHING end -----
 
 async function getNote(noteId: string) {
+	// since it is dynamic route, it won't automatically cache every request
 	const res = await fetch(`http://127.0.0.1:8090/api/collections/Notes/records/${noteId}`, {
-		// since it is dynamic route, it won't automatically cache every request
 		// but we can use: ISR => Incremental Static Regeneration
 		// by adding revalidate
 		// it will regenerate page on the server if it is older than 10 seconds
 		next: { revalidate: 10 },
+		// pages can also be prerendered with "generateStaticParams"
+		// it runs at build time before the corresponding Layouts or Pages are generated.
+		// It will not be called again during revalidation (ISR)
 	});
 	const data = await res.json();
 

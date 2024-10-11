@@ -24,6 +24,10 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Make a flexbox `layout`
 -   \_\_ Add error handling when PocketBase isn't run, that says "Please run pocketbase by typing this and that"
 -   \_\_ Add error handling in note component https://nextjs.org/docs/app/api-reference/file-conventions/error
+-   \_\_ use `generateStaticParams` to pre-generate notes.
+-   \_\_ Separate Note.id from Note in TypeScript
+-   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
+-   \_\_
 -   \_\_
 -   \_\_
 -   \_\_
