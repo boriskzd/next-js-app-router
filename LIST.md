@@ -29,6 +29,9 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
 -   \_\_ Review tasks
 -   \_\_ Review video + tasks and update tasks
+-   \_\_ See other Git Pull option
+-   \_\_ Add Delete Note option: `method: DELETE`
+-   \_\_ Add Edit Note option: `method: PUT`
 -   \_\_
 -   \_\_
 -   \_\_
