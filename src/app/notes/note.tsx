@@ -18,7 +18,16 @@ export default function Note({ note }: NoteProps) {
 	const { title, field, created, id } = note || {};
 
 	return (
-		<div style={{ display: 'inline-block', border: '1px solid pink', width: 200, margin: 10 }}>
+		<div
+			style={{
+				display: 'inline-block',
+				border: '2px solid #3A6D8C',
+				borderRadius: 5,
+				width: 200,
+				margin: 10,
+				padding: 5,
+			}}
+		>
 			<h2>{title}</h2>
 			<p>{field}</p>
 			<p>Created: {created}</p>

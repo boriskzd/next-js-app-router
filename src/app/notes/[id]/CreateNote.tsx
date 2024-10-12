@@ -38,7 +38,10 @@ export default function CreateNote() {
 	};
 
 	return (
-		<form onSubmit={create} style={{ width: 300, padding: 10, border: '1px solid pink', marginBottom: 10 }}>
+		<form
+			onSubmit={create}
+			style={{ width: 300, padding: 10, border: '2px solid #3A6D8C', borderRadius: 5, margin: 10 }}
+		>
 			<h3>Add New Note</h3>
 			<input
 				type='text'
@@ -54,7 +57,16 @@ export default function CreateNote() {
 				placeholder='Field'
 				style={{ color: 'black', width: '100%' }}
 			/>
-			<button type='submit' style={{ width: '100%', border: '1px solid pink' }}>
+			<button
+				type='submit'
+				style={{
+					width: '100%',
+					border: '2px solid #3A6D8C',
+					borderRadius: 5,
+					backgroundColor: '#3A6D8C',
+					color: 'rgba(255,255,255,.7)',
+				}}
+			>
 				Create Note
 			</button>
 		</form>

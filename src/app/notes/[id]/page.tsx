@@ -26,9 +26,9 @@ export default async function NotePage({ params }: any) {
 	if (note.id === 'sew4zwh9y0r2tdk') throw Error();
 
 	return (
-		<div>
+		<main>
 			<h1>Notes/{note.id}</h1>
 			<Note note={note} />
-		</div>
+		</main>
 	);
 }

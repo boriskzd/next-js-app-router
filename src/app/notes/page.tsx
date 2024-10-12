@@ -65,7 +65,7 @@ export default async function NotesPage() {
 	const notes = await getNotes();
 
 	return (
-		<div>
+		<main>
 			<h1>Notes</h1>
 			{notes?.map((note) => {
 				return (
@@ -77,6 +77,6 @@ export default async function NotesPage() {
 				);
 			})}
 			<CreateNote />
-		</div>
+		</main>
 	);
 }
