@@ -48,7 +48,6 @@ a {
 }
 
 #nextjs-official-main {
-	/* min-height: 100vh; */
 	padding: 1rem 0;
 	display: flex;
 	flex-direction: column;
@@ -90,14 +89,10 @@ body {
 
 main {
 	flex: 1;
-	padding: 5px;
+	padding: 10px;
 }
 
 main h1 {
 	padding-left: 10px;
 	padding-right: 10px;
-}
-
-footer {
-	margin-top: auto;
 }

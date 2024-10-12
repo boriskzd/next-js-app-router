@@ -16,7 +16,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add `template.tsx`
 -   \_\_ Add `head.tsx`
 -   \_\_ Add `layout.tsx` in subdirectory that already has `layout.tsx`
--   \_\_ Add `global.css` @ 3:39
+-   <u>✔</u> Add `global.css` @ 3:39
 -   <u>✔</u> Add **PocketBase** as backend
 -   \_\_ Add Authentication for PocketBase, possibly for automatic login: [PocketBase ---> Authentication](https://pocketbase.io/docs/authentication/)
 -   <u>✔</u> Add TypeScript for items instead of any[]
@@ -28,7 +28,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Separate Note.id from Note in TypeScript
 -   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
 -   \_\_ Review tasks
--   \_\_ Review video + tasks and update tasks
+-   <u>✔</u> Review video + tasks and update tasks
 -   \_\_ See other Git Pull option
 -   \_\_ Add Delete Note option: `method: DELETE`
 -   \_\_ Add Edit Note option: `method: PUT`
