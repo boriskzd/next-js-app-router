@@ -38,6 +38,10 @@ REST API: http://127.0.0.1:8090/api/
 
 Admin UI: http://127.0.0.1:8090/_/
 
+API for our Notes: http://127.0.0.1:8090/api/collections/Notes/records
+
+PocketBase JavaScript SDK: https://github.com/pocketbase/js-sdk
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

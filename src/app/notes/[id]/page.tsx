@@ -1,7 +1,6 @@
-import Note from './../note';
-import { NoteType } from './../note';
+import Note, { NoteId, NoteType } from './../note';
 
-async function getNote(noteId: string) {
+async function getNote(noteId: NoteId) {
 	// since it is dynamic route, it won't automatically cache every request
 	const res = await fetch(`http://127.0.0.1:8090/api/collections/Notes/records/${noteId}`, {
 		// but we can use: ISR => Incremental Static Regeneration

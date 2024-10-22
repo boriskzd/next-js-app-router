@@ -25,15 +25,15 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add error handling when PocketBase isn't run, that says "Please run pocketbase by typing this and that"
 -   \_\_ Add error handling in note component https://nextjs.org/docs/app/api-reference/file-conventions/error
 -   \_\_ use `generateStaticParams` to pre-generate notes. @ 6:27
--   \_\_ Separate Note.id from Note in TypeScript
+-   <u>✔</u> Separate Note.id from Note in TypeScript
 -   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
--   \_\_ Review tasks
+-   <u>✔</u> Review tasks
 -   <u>✔</u> Review video + tasks and update tasks
 -   \_\_ See other Git Pull option
 -   \_\_ Add Delete Note option: `method: DELETE`
 -   \_\_ Add Edit Note option: `method: PUT`
 -   <u>✔</u> Check why it doesn't automatically show notes, maybe 10 sec in `notes\[id]\page`
--   \_\_
+-   \_\_ Add Cypress for testing
 -   \_\_
 -   \_\_
 -   \_\_

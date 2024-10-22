@@ -8,6 +8,8 @@ export type NoteType = {
 	collectionName?: string;
 };
 
+export type NoteId = Pick<NoteType, 'id'>;
+
 interface NoteProps {
 	note: NoteType;
 }
