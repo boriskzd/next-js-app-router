@@ -1,4 +1,4 @@
-import Note, { NoteId, NoteType } from './../note';
+import Note, { NoteId, NoteType } from '../Note';
 
 async function getNote(noteId: NoteId) {
 	// since it is dynamic route, it won't automatically cache every request
@@ -22,7 +22,7 @@ export default async function NotePage({ params }: any) {
 
 	// add error testing for one note
 	// TODO: add Error handling
-	if (note.id === 'sew4zwh9y0r2tdk') throw Error();
+	if (note.id === 'sew4zwh9y0r2tdk') throw Error(); // Title --> Ledo Quatro
 
 	return (
 		<main>

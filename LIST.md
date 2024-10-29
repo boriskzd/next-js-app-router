@@ -12,7 +12,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   <u>✔</u> Add `page.tsx`
 -   \_\_ Add `layout.tsx`
 -   <u>✔</u> Add `loading.tsx`
--   \_\_ Add `error.tsx`
+-   <u>✔</u> Add `error.tsx`
 -   \_\_ Add `template.tsx`
 -   \_\_ Add `head.tsx`
 -   \_\_ Add `layout.tsx` in subdirectory that already has `layout.tsx`
@@ -26,7 +26,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add error handling in note component https://nextjs.org/docs/app/api-reference/file-conventions/error
 -   \_\_ use `generateStaticParams` to pre-generate notes. @ 6:27
 -   <u>✔</u> Separate Note.id from Note in TypeScript
--   \_\_ Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
+-   <u>✔</u> Remove this warning in terminal: `The following paths are ignored by one of your .gitignore files:`
 -   <u>✔</u> Review tasks
 -   <u>✔</u> Review video + tasks and update tasks
 -   \_\_ See other Git Pull option
@@ -34,6 +34,8 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add Edit Note option: `method: PUT`
 -   <u>✔</u> Check why it doesn't automatically show notes, maybe 10 sec in `notes\[id]\page`
 -   \_\_ Add Cypress for testing
+-   \_\_
+-   \_\_
 -   \_\_
 -   \_\_
 -   \_\_

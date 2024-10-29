@@ -1,7 +1,7 @@
 // Next
 import Image from 'next/image';
 // Components
-import LikeButton from './like-button';
+import LikeButton from './components/LikeButton';
 
 export default function Home() {
 	const myList = ['Archipelago', 'Beach', 'Coast', 'Desolation'];

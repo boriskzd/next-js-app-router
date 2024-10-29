@@ -1,7 +1,7 @@
 import PocketBase from 'pocketbase';
 import Link from 'next/link';
-import Note from './note';
-import { NoteType } from './note';
+import Note from './Note';
+import { NoteType } from './Note';
 import CreateNote from './[id]/CreateNote';
 
 // ----- CACHING -----
