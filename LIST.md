@@ -15,7 +15,8 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   <u>✔</u> Add `error.tsx`
 -   \_\_ Add `template.tsx`
 -   \_\_ Add `head.tsx`
--   \_\_ Add `layout.tsx` in subdirectory that already has `layout.tsx`
+-   <u>✔</u> Add `layout.tsx` in subdirectory that already has `layout.tsx`
+-   <u>✔</u> Add titles to pages with Metadata API
 -   <u>✔</u> Add `global.css` @ 3:39
 -   <u>✔</u> Add **PocketBase** as backend
 -   \_\_ Add Authentication for PocketBase, possibly for automatic login: [PocketBase ---> Authentication](https://pocketbase.io/docs/authentication/)
