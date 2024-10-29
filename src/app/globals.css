@@ -96,3 +96,19 @@ main h1 {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+#navbar {
+	background: #3a6d8c;
+	color: rgba(255, 255, 255, 0.7);
+	padding: 20px;
+}
+
+.navbarLink {
+	padding: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbarLink.active {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 1);
+}

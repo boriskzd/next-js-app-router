@@ -1,17 +1,27 @@
+'use client';
+
 /* Global Navbar */
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
+	const pathname: string = usePathname();
+
+	const isBasePathSame = (url: string, path: string) => {
+		const basePath = url.split('/')[1];
+		return basePath === path;
+	};
+
 	return (
-		<nav style={{ background: '#3A6D8C', color: 'rgba(255,255,255,.7)', padding: 20 }}>
-			<Link href='/' style={{ padding: 20, border: '1px solid rgba(255,255,255,.5)' }}>
+		<nav id='navbar'>
+			<Link href='/' className={`navbarLink ${pathname === '/' ? 'active' : ''}`}>
 				Home
 			</Link>
-			<Link href='/notes' style={{ padding: 20, border: '1px solid rgba(255,255,255,.5)' }}>
+			<Link href='/notes' className={`navbarLink ${isBasePathSame(pathname, 'notes') ? 'active' : ''}`}>
 				Notes
 			</Link>
-			<Link href='/about' style={{ padding: 20, border: '1px solid rgba(255,255,255,.5)' }}>
+			<Link href='/about' className={`navbarLink ${pathname === '/about' ? 'active' : ''}`}>
 				About
 			</Link>
 		</nav>
