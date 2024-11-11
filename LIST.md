@@ -35,6 +35,7 @@ DONE begins with `✔`, and is written with `<u>✔</u>` in Markdown, replacing 
 -   \_\_ Add Edit Note option: `method: PUT`
 -   <u>✔</u> Check why it doesn't automatically show notes, maybe 10 sec in `notes\[id]\page`
 -   \_\_ Add Cypress for testing
+-   \_\_ Add TailwindCSS for styling
 -   \_\_
 -   \_\_
 -   \_\_

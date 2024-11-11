@@ -68,13 +68,7 @@ export default async function NotesPage() {
 		<main>
 			<h1>Notes</h1>
 			{notes?.map((note) => {
-				return (
-					// generate clickable notes
-					// clicking on notes visits individual note page
-					<Link href={`/notes/${note.id}`} key={note.id}>
-						<Note note={note} />
-					</Link>
-				);
+				return <Note note={note} key={note.id} isLink={true} />;
 			})}
 			<CreateNote />
 		</main>
