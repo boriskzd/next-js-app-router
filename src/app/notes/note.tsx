@@ -1,3 +1,5 @@
+import NoteActions from '@/notes/[id]/NoteActions';
+
 export type NoteType = {
 	id: string;
 	created: string;
@@ -12,9 +14,10 @@ export type NoteId = Pick<NoteType, 'id'>;
 
 interface NoteProps {
 	note: NoteType;
+	actionButtons?: boolean;
 }
 
-export default function Note({ note }: NoteProps) {
+export default function Note({ note, actionButtons }: NoteProps) {
 	// object destructuring with a fallback
 	// If note is null or undefined, it will fallback to an empty object, preventing errors and assigning undefined to the destructured variables.
 	const { title, field, created, id } = note || {};
@@ -34,6 +37,9 @@ export default function Note({ note }: NoteProps) {
 			<p>{field}</p>
 			<p>Created: {created}</p>
 			<small>ID: {id}</small>
+
+			{/* If we are on a note page, display Edit and Delete buttons */}
+			{actionButtons && <NoteActions note={note} />}
 		</div>
 	);
 }

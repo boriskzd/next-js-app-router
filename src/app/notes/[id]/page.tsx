@@ -27,7 +27,7 @@ export default async function NotePage({ params }: any) {
 	return (
 		<main>
 			<h1>Notes/{note.id}</h1>
-			<Note note={note} />
+			<Note note={note} actionButtons={true} />
 		</main>
 	);
 }
