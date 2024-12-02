@@ -26,6 +26,7 @@ export default function NoteActions({ note }: NoteActionsProps) {
 		// Refreshes the current route, re-fetching data from PocketBase and re-rendering Server Components.
 		// The client merges the updated React Server Component payload without losing client-side state (e.g., useState) or browser state (e.g., scroll position).
 
+		// TODO: DOESN'T WORK, FIX IT!
 		router.refresh();
 	};
 
