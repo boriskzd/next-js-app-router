@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { titleMeta } from '../lib/constants';
+import { titleMeta } from '@lib/constants';
 
 export const metadata: Metadata = {
 	title: `${titleMeta} - Notes`,

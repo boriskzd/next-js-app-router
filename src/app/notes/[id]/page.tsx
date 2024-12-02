@@ -1,4 +1,4 @@
-import Note, { NoteId, NoteType } from '../Note';
+import Note, { NoteId, NoteType } from '@/notes/note';
 
 async function getNote(noteId: NoteId) {
 	// since it is dynamic route, it won't automatically cache every request

@@ -19,8 +19,13 @@
 				"name": "next"
 			}
 		],
+		// spaodjdsa
+		"baseUrl": "./src/app",
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./*"],
+			"@components/*": ["./components/*"],
+			"@lib/*": ["./lib/*"],
+			"@api/*": ["./api/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
