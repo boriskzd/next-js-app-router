@@ -2,7 +2,7 @@ import PocketBase from 'pocketbase';
 import Link from 'next/link';
 import Note from '@/notes/note';
 import { NoteType } from '@/notes/note';
-import CreateNote from '@/notes/[id]/CreateNote';
+import NoteForm from '@/notes/[id]/NoteForm';
 
 // ----- CACHING -----
 
@@ -76,7 +76,7 @@ export default async function NotesPage() {
 					</Link>
 				);
 			})}
-			<CreateNote />
+			<NoteForm createOrEdit={'create'} />
 		</main>
 	);
 }
