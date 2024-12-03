@@ -6,14 +6,21 @@ import { NoteType } from '@/notes/note';
 
 interface NoteActionsProps {
 	note: NoteType;
+	onEdit: () => void;
 }
 
-export default function NoteActions({ note }: NoteActionsProps) {
+export default function NoteActions({ note, onEdit }: NoteActionsProps) {
 	// object destructuring with a fallback
 	// If note is null or undefined, it will fallback to an empty object, preventing errors and assigning undefined to the destructured variables.
 	const { id } = note || {};
 
 	const router = useRouter();
+
+	const handleEdit = async () => {
+		console.log('Edit: - ', id);
+
+		onEdit();
+	};
 
 	const handleDelete = async () => {
 		console.log('Delete: - ', note.id);
@@ -32,7 +39,11 @@ export default function NoteActions({ note }: NoteActionsProps) {
 
 	return (
 		<div className='p-1 pt-3 flex gap-2'>
-			<button type='button' className='bg-green-800 hover:bg-green-600 text-white p-2 rounded text-sm w-1/2'>
+			<button
+				type='button'
+				onClick={handleEdit}
+				className='bg-green-800 hover:bg-green-600 text-white p-2 rounded text-sm w-1/2'
+			>
 				Edit
 			</button>
 			<button

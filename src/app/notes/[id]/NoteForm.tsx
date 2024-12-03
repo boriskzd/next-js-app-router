@@ -6,16 +6,20 @@ import { NoteType } from '@/notes/note';
 interface NoteFormProps {
 	note?: NoteType;
 	createOrEdit: 'create' | 'edit';
+	onEdit?: () => void;
 }
 
-export default function NoteForm({ createOrEdit }: NoteFormProps) {
+export default function NoteForm({ note, createOrEdit, onEdit }: NoteFormProps) {
 	const isEdit = createOrEdit === 'edit';
+	const tempTitle = isEdit ? note?.title : '';
+	const tempField = isEdit ? note?.field : '';
 
-	const [title, setTitle] = useState('');
-	const [field, setField] = useState('');
+	const [title, setTitle] = useState(tempTitle);
+	const [field, setField] = useState(tempField);
 
 	useEffect(() => {
 		isEdit ? console.log('it is Edit!') : console.log('it is Create!');
+		console.log(note);
 
 		// Optional cleanup function
 		return () => {
@@ -23,6 +27,7 @@ export default function NoteForm({ createOrEdit }: NoteFormProps) {
 		};
 	}, []);
 
+	const noteId = isEdit ? note?.id : '';
 	const method = isEdit ? 'PATCH' : 'POST';
 	const formTitle = isEdit ? 'Edit Note' : 'Add New Note';
 	const buttonText = isEdit ? 'Save Changes' : 'Create Note';
@@ -37,7 +42,7 @@ export default function NoteForm({ createOrEdit }: NoteFormProps) {
 		console.table({ Title: title, Field: field });
 
 		// Fetch
-		await fetch('http://127.0.0.1:8090/api/collections/Notes/records', {
+		await fetch(`http://127.0.0.1:8090/api/collections/Notes/records${'/' + noteId}`, {
 			method: method,
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -52,6 +57,8 @@ export default function NoteForm({ createOrEdit }: NoteFormProps) {
 		// clear input fields in form
 		setTitle('');
 		setField('');
+
+		isEdit && onEdit && onEdit();
 
 		// Refreshes the current route, re-fetching data from PocketBase and re-rendering Server Components.
 		// The client merges the updated React Server Component payload without losing client-side state (e.g., useState) or browser state (e.g., scroll position).
